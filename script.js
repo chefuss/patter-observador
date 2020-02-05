@@ -31,8 +31,8 @@ Observador.prototype = {
 }
 
 var modelo = new Modelo();
-var observador1 = new Observador('observer1', modelo);
-var observador2 = new Observador('observer2', modelo);
+var observador1 = new Observador('observer1');
+var observador2 = new Observador('observer2');
 
 modelo.agregarObservador(observador1);
 modelo.agregarObservador(observador2);
