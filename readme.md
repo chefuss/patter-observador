@@ -1,9 +1,6 @@
 # Patrón observador.
-
-Trabajamos en una simple aplicación con el patrón observador.
-
-1. forkeamos este repo.
-2. En script.js vamos a trabajar.
-
 ## Objetivos.
-Debemos crear una clase Modelo que tenga la lógica para trabajar con los datos. Además deberá tener un array donde guardará los observadores, y un método para suscribir y otro para notificar de los cambios a los observadores.
+Tenemos dos formas de notificar a nuestras vistas de los cambios.
+La primera estará a cargo del "modelo", ya que éste además de tratar con los datos se encargará de notificar a cada vista, y llevar el control de los observadores.
+
+En el segundo caso, tendremos una clase aparte que se encargue del manejo de las notificaciones y suscripciones, y notificará a través de un evento.
